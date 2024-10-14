@@ -7,7 +7,7 @@ import datetime
 import os
 
 # Настройки подключения к Azure
-connection_string = st.secrets['connection_string']
+connection_string = st.secrets['connectionstring']
 container_name = "iotcontainer"
 
 
