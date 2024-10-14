@@ -6,8 +6,8 @@ from io import StringIO
 from datetime import datetime
 
 # Настройки подключения к Azure
-connection_string = st.secrets['connection_string']
-container_name = st.secrets["container_name"]
+connection_string = st.secrets['connectionstring']
+container_name = "iotcontainer"
 
 # Функция для получения CSV данных из Blob Storage
 def get_csv_from_blob(blob_service_client, container_name, blob_name):
