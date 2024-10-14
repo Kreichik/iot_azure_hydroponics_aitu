@@ -27,7 +27,9 @@ now = datetime.datetime.now(datetime.timezone.utc)
 
 
 # Формируем шаблон для папок текущего часа
-path_to_files = f"d1test/year={now.year}/month={now.month:02}"
+#path_to_files = f"d1test/year={now.year}/month={now.month:02}/day={now.day:02}/hour={now.hour:02}"
+path_to_files = f"d1test/year={now.year}/month={now.month:02}/day={now.day:02}"
+
 os.write(1, path_to_files.encode('utf-8'))
 # Получение списка файлов в директории за текущий час
 os.write(1,b'collect blob\n')
