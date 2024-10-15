@@ -89,7 +89,7 @@ def main():
 
             # Фильтрация данных по текущему часу
             #all_data = all_data[all_data['EventProcessedUtcTime'].dt.hour == now.hour]
-            all_data = all_data[all_data['EventProcessedUtcTime'].dt.hour == now.hour]
+            all_data = all_data[all_data['EventProcessedUtcTime'].dt.day == now.day]
             # Отображение данных в виде графиков
             #st.write("Данные загружены, строим графики за текущий день...")
             i = i + 3
