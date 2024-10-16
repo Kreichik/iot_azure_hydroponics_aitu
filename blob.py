@@ -80,7 +80,12 @@ def main():
 
             # Получаем последнее значение температуры для шкалы
             last_temperature = all_data_sorted.iloc[0]['Temperature']
-            fig_gauge1 = create_gauge(last_temperature, "Current Temperature", [-20, 50],"rgba(0,0,0,0)")
+            fig_gauge1 = go.Figure(go.Indicator(
+                mode="gauge+number",
+                value=current_temp,
+                title={'text': "Current Temperature"},
+                gauge={'axis': {'range': [None, 50]}, 'bar': {'color': "green"}}))
+            st.plotly_chart(fig4, use_container_width=True, key="chart4")
 
             # Создаем второй индикатор шкалы (например, для влажности или другой метрики)
             last_temperature2 = all_data_sorted.iloc[0]['Brightness']
