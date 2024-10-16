@@ -85,7 +85,7 @@ def main():
                 value=last_temperature,
                 title={'text': "Current Temperature"},
                 gauge={'axis': {'range': [None, 50]}, 'bar': {'color': "green"}}))
-            st.plotly_chart(fig4, use_container_width=True, key="chart4")
+          
 
             # Создаем второй индикатор шкалы (например, для влажности или другой метрики)
             last_temperature2 = all_data_sorted.iloc[0]['Brightness']
