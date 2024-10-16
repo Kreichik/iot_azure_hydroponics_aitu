@@ -82,4 +82,4 @@ else:
 # Auto-refresh the page every 60 seconds
 refresh_interval = 60  # Set the refresh interval in seconds
 time.sleep(refresh_interval)
-st.experimental_rerun()
+#st.experimental_rerun()
