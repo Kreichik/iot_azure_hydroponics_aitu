@@ -87,7 +87,7 @@ else:
     st.warning("No data available to display.")
 
 # Auto-refresh the page every 60 seconds
-refresh_interval = 1  # Set the refresh interval in seconds
+refresh_interval = 10  # Set the refresh interval in seconds
 time.sleep(refresh_interval)
 st.rerun()
 
