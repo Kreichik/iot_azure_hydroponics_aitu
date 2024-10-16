@@ -23,7 +23,7 @@ def get_csv_from_blob(blob_service_client, container_name, blob_name):
 def fetch_blob_data():
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
     now = datetime.datetime.now(datetime.timezone.utc)
-    path_to_files = f"d1test/year={now.year}/month={now.month:02}/day=15"
+    path_to_files = f"d1test/year={now.year}/month={now.month:02}/day=16"
 
     blob_list = blob_service_client.get_container_client(container_name).list_blobs(name_starts_with=path_to_files)
     all_data = pd.DataFrame()
