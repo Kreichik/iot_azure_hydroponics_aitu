@@ -82,7 +82,7 @@ def main():
             last_temperature = all_data_sorted.iloc[0]['Temperature']
             fig_gauge1 = go.Figure(go.Indicator(
                 mode="gauge+number",
-                value=current_temp,
+                value=last_temperature,
                 title={'text': "Current Temperature"},
                 gauge={'axis': {'range': [None, 50]}, 'bar': {'color': "green"}}))
             st.plotly_chart(fig4, use_container_width=True, key="chart4")
