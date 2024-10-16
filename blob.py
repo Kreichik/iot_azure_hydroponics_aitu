@@ -75,7 +75,7 @@ if not all_data.empty:
 
     # Chart 4: Gauge (Current Temperature)
     with col4:
-        current_temp = all_data['Temperature'].iloc[-1] if 'Temperature' in all_data.columns else 0
+        current_temp = all_data['Temperature'].iloc[0] if 'Temperature' in all_data.columns else 0
         fig4 = go.Figure(go.Indicator(
             mode="gauge+number",
             value=current_temp,
