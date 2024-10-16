@@ -62,7 +62,7 @@ def main():
 
         # Формируем шаблон для папок текущего часа
         # path_to_files = f"d1test/year={now.year}/month={now.month:02}/day={now.day:02}/hour={now.hour:02}"
-        path_to_files = f"d1test/year={now.year}/month={now.month:02}/day={now.day:02-1}"
+        path_to_files = f"d1test/year={now.year}/month={now.month:02}/day={(now.day:02)-1}"
 
         os.write(1, path_to_files.encode('utf-8'))
         # Получение списка файлов в директории за текущий час
@@ -88,7 +88,7 @@ def main():
             all_data['EventProcessedUtcTime'] = pd.to_datetime(all_data['EventProcessedUtcTime'])
 
             # Фильтрация данных по текущему часу
-            all_data = all_data[all_data['EventProcessedUtcTime'].dt.hour == now.hour]
+            #all_data = all_data[all_data['EventProcessedUtcTime'].dt.hour == now.hour]
             #all_data = all_data[all_data['EventProcessedUtcTime'].dt.day == now.day]
             # Отображение данных в виде графиков
             #st.write("Данные загружены, строим графики за текущий день...")
