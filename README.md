@@ -74,7 +74,7 @@ This project can be further enhanced with the following features:
 ## 📞 Contact
 For any questions, suggestions, or collaborations, feel free to contact:
 
-**Author**:
+**Author**: 
 **Email**: 
 
 
