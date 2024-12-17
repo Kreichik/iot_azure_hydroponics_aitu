@@ -74,10 +74,7 @@ This project can be further enhanced with the following features:
 ## 📞 Contact
 For any questions, suggestions, or collaborations, feel free to contact:
 
-**Author**: *Your Name*  
-**Email**: [your.email@example.com](mailto:your.email@example.com)  
-**LinkedIn**: [Your LinkedIn](https://linkedin.com)
+**Author**:
+**Email**: 
 
----
 
-**Made with ❤️ and technology to make life easier!** 🌍
